@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banana &amp; Butterfly | Anthony Yin</title>
+    <link rel="stylesheet" href="personalwebsite.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery.js"></script>
+<style>
+    #bananaartpic {
+        filter: grayscale(1);
+        width: 1%;
+        transition: 1s;
+    }
+    .sidetextbox {
+        width: 94%;
+        margin: 1% 1% 0% 1%;
+        padding: 1% 2% 1% 2%;
+    }
+    .sidepic {
+        width: 98%;
+        margin: 1% 1% 0% 1%;
+    }
+    @media (max-width: 960px) {
+        #logo {
+            width: 4%;
+        }
+    }
+    @media (max-width: 480px) {
+    #logo {
+        width: 10%;
+    }
+    .sidetextbox {
+        width: 94%;
+        margin: 1% 1% 0% 1%;
+        padding: 1% 2% 1% 2%;
+    }
+    .sidepic {
+        width: 98%;
+        margin: 1% 1% 0% 1%;
+    }
+    }
+</style>
+</head>
+<body>
+<div id="outercontainer">
+    <div id="headerbox" class="textbox">
+        <a href="#"><img src="photoassets/butterfly_banana_logo_2.png" id="logo"></a>
+        &nbsp;&nbsp;<a href="#" id="home" class="link"><span>Anthony Yin</span></a><span class="subheader">'s Logo</span>
+        <div id="navbox">
+            <a href="#" class="link"><span>me</span></a>
+            <a href="#" class="link"><span>ideas</span></a>
+            <a href="#" class="link"><span>resume</span></a>
+            <a href="#" class="link"><span>contact</span></a>
+        </div><!--close navbox-->
+    </div><!--close headerbox-->
+    <div id="bananatext" class="sidetextbox textbox">
+        <h1>Why is your logo a butterfly on a banana?</h1>
+        <p>
+            Yes, it is kind of hard to see how this relates to me, but hopefully this excerpt from <a href="#" class="link"><span><em>How to be Anthony Yin</em></span></a> written by my friend, Asia, explains it better than I can:
+        </p>
+        <blockquote>
+            "<strong>Step 4: Save the lives of butterflies everywhere.</strong> Anthony isn't only a great friend to humans (when he isn't judging you but "just kidding" about it) but is a friend to all nature as well. Anthony once saved this very butterfly from drowning by extending his metaphorical hand (his trusty banana) and rehabilitating it until it was strong enough to fly on its own. I thought him a hero, but he insists that it's all in a day's work. That's how unselfish this man is. It would be wise to practice altruism, compassion and benevolence in order to accurately portray Anthony's philanthropic ways.<br>
+            P.S. Anthony didn't name this butterfly because he wasn't sure of it's gender and didn't want to misgender it.<br>
+            <strong>What a guy.</strong>"
+        </blockquote>
+        <p>
+            Thanks, Asia. <img id="bananaartpic" src="photoassets/butterfly_banana_logo_2.png">
+        </p>
+    </div><!--close bananatext-->
+    <div id="bananapic" class="sidepic">
+        <a href="#"><img src="photoassets/IMG_5442.JPG"></a>
+    </div><!--close bananapic-->
+</div><!--close outercontainer-->
+<script>
+    $(document).ready(function(){
+        $("#bananaartpic").on("mouseover", function(){
+            $(this).css("filter", "grayscale(0)");
+        });
+    });
+</script>
+</body>
+</html>

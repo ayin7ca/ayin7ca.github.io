@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anthony Yin</title>
+    <link rel="stylesheet" href="personalwebsite.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+<div id="outercontainer">
+    <div id="headerbox" class="textbox">
+        <a href="#"><img src="photoassets/butterfly_banana_logo_2.png" id="logo"></a>
+        &nbsp;&nbsp;<a href="#" id="home" class="link"><span>Anthony Yin</span></a>
+        <div id="navbox">
+            <a href="#" class="link"><span>me</span></a>
+            <a href="#" class="link"><span>ideas</span></a>
+            <a href="#" class="link"><span>resume</span></a>
+            <a href="#" class="link"><span>contact</span></a>
+        </div><!--close navbox-->
+    </div><!--close headerbox-->
+    <div id="welcomebox" class="textbox">
+        <span id="closex1" class="closex"><a href="#">&#10006;</a></span>
+        <h1>Hello, my name is Anthony Yin</h1>
+        <p>I'm currently a student at the University of Southern California, majoring in <a href="http://iovine-young.usc.edu/" class="link"><span>Arts, Technology and the Business of Innovation</span></a>. I'm interested in a multitude of topics.</p>
+    </div><!--close welcomebox-->
+    <div id="musicpic" class="sidepic">
+        <a href="#"><img src="photoassets/11402564_706471396149155_6002060224654787143_o.jpg"></a>
+    </div><!--close musicpic-->
+    <div id="musictext" class="sidetextbox textbox">
+        <span id="closex2" class="closex"><a href="#">&#10006;</a></span><br>
+        <h1>I believe <a href="#" class="link musiclink"><span class="musiclink">music</span></a> is for the brave.</h1>
+        <p>
+            I play a lot of guitar and bass.
+        </p><p>
+            I love seeing how audio plays a large, dynamic role in shaping someone's emotional response. It inspires me to experiment with recording, editing and creating new music.
+        </p>
+    </div><!--close musictext-->
+    <div id="artpic" class="sidepic">
+        <a href="#"><img src="photoassets/DSC00857.jpg"></a>
+    </div><!--close artpic-->
+    <div id="arttext" class="sidetextbox textbox">
+        <span id="closex3" class="closex"><a href="#">&#10006;</a></span><br>
+        <h1>I believe <a href="#" class="link artlink"><span class="artlink">art</span></a> is for the keen.</h1>
+        <p>
+            I like photography, drawing and design.
+        </p><p>
+            I have a lot of respect for people who can take something and make it "feel" right. I'm still trying to figure it all out myself, but in the process of it I enjoy making and looking at visually pleasing things. 
+        </p>
+    </div><!--close arttext-->
+    <div id="interviewpic" class="sidepic">
+        <a href="#"><img src="photoassets/DSC00108.jpg"></a>
+    </div><!--close interviewpic-->
+    <div id="interviewtext" class="sidetextbox textbox">
+        <span id="closex4" class="closex"><a href="#">&#10006;</a></span><br>
+        <h1>I believe <a href="#" class="link interviewlink"><span class="interviewlink">listening</span></a> is not done enough today.</h1>
+        <p>
+            I interview people.
+        </p><p>
+            I think it's important to trying to understand what other people are thinking, rather than throw out your own opinion.
+        </p>
+    </div><!--close interviewtext-->
+    <div id="nerdpic" class="sidepic">
+        <a href="#"><img src="photoassets/DSC01257.jpg"></a>
+    </div><!--close interviewpic-->
+    <div id="nerdtext" class="sidetextbox textbox">
+        <span id="closex5" class="closex"><a href="#">&#10006;</a></span><br>
+        <h1>I'm a <a href="#" class="link nerdlink"><span class="nerdlink">nerd</span></a>.</h1>
+        <p>
+            And it feels pretty great.
+        </p>
+    </div><!--close interviewtext-->
+    <div id="footerbox" class="textbox">
+        <h1>That's just a bit about me</h1>
+        <p>This baby was all coded from scratch. Thanks for visiting!</p>
+    </div><!--close footerbox-->
+</div><!--close outercontainer-->
+<script>
+$(document).ready(function(){
+    $("#closex1").on("mouseup", function(){
+        $("#welcomebox").hide();
+    });
+    
+    $("#closex2").on("mouseup", function(){
+        $("#musictext").hide();
+        $("#musicpic").hide();
+    });
+    $("#closex3").on("mouseup", function(){
+        $("#arttext").hide();
+        $("#artpic").hide();
+    });
+    $("#closex4").on("mouseup", function(){
+        $("#interviewtext").hide();
+        $("#interviewpic").hide();
+    });
+    $("#closex5").on("mouseup", function(){
+        $("#nerdtext").hide();
+        $("#nerdpic").hide();
+    });
+    
+    $("#musicpic").on("mouseover", function(){
+        $(".musiclink").css("color", "white");
+        $(".musiclink").css("background-color", "black")
+    });
+    $("#musicpic").on("mouseout", function(){
+        $(".musiclink").css("color", "black");
+        $(".musiclink").css("background-color", "RGBA(0, 0, 0, 0)")
+    });
+    $(".musiclink").on("mouseover", function(){
+        $(".musiclink").css("color", "white");
+        $(".musiclink").css("background-color", "black")
+    });
+    $(".musiclink").on("mouseout", function(){
+        $(".musiclink").css("color", "black");
+        $(".musiclink").css("background-color", "RGBA(0, 0, 0, 0)")
+    });
+    
+    $("#artpic").on("mouseover", function(){
+        $(".artlink").css("color", "white");
+        $(".artlink").css("background-color", "black")
+    });
+    $("#artpic").on("mouseout", function(){
+        $(".artlink").css("color", "black");
+        $(".artlink").css("background-color", "RGBA(0, 0, 0, 0)")
+    });
+    $(".artlink").on("mouseover", function(){
+        $(".artlink").css("color", "white");
+        $(".artlink").css("background-color", "black")
+    });
+    $(".artlink").on("mouseout", function(){
+        $(".artlink").css("color", "black");
+        $(".artlink").css("background-color", "RGBA(0, 0, 0, 0)")
+    });
+    
+    $("#interviewpic").on("mouseover", function(){
+        $(".interviewlink").css("color", "white");
+        $(".interviewlink").css("background-color", "black")
+    });
+    $("#interviewpic").on("mouseout", function(){
+        $(".interviewlink").css("color", "black");
+        $(".interviewlink").css("background-color", "RGBA(0, 0, 0, 0)")
+    });
+    $(".interviewlink").on("mouseover", function(){
+        $(".interviewlink").css("color", "white");
+        $(".interviewlink").css("background-color", "black")
+    });
+    $(".interviewlink").on("mouseout", function(){
+        $(".interviewlink").css("color", "black");
+        $(".interviewlink").css("background-color", "RGBA(0, 0, 0, 0)")
+    });
+    
+    $("#nerdpic").on("mouseover", function(){
+        $(".nerdlink").css("color", "white");
+        $(".nerdlink").css("background-color", "black")
+    });
+    $("#nerdpic").on("mouseout", function(){
+        $(".nerdlink").css("color", "black");
+        $(".nerdlink").css("background-color", "RGBA(0, 0, 0, 0)")
+    });
+    $(".nerdlink").on("mouseover", function(){
+        $(".nerdlink").css("color", "white");
+        $(".nerdlink").css("background-color", "black")
+    });
+    $(".nerdlink").on("mouseout", function(){
+        $(".nerdlink").css("color", "black");
+        $(".nerdlink").css("background-color", "RGBA(0, 0, 0, 0)")
+    });
+});
+</script>
+</body>
+</html>
